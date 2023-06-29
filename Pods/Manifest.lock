@@ -1,0 +1,22 @@
+PODS:
+  - CRFramework (1.0.0)
+
+DEPENDENCIES:
+  - CRFramework (from `https://github.com/redangelboy/CRFramework.git`, tag `1.0.2`)
+
+EXTERNAL SOURCES:
+  CRFramework:
+    :git: https://github.com/redangelboy/CRFramework.git
+    :tag: 1.0.2
+
+CHECKOUT OPTIONS:
+  CRFramework:
+    :git: https://github.com/redangelboy/CRFramework.git
+    :tag: 1.0.2
+
+SPEC CHECKSUMS:
+  CRFramework: 198aacf7ca34245876dc395343772a4804c3946a
+
+PODFILE CHECKSUM: 50999cf570bbae11a4f5b3e7eba2526c83e0a1f6
+
+COCOAPODS: 1.12.1

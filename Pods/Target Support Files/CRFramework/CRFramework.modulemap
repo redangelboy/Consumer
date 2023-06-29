@@ -1,0 +1,6 @@
+framework module CRFramework {
+  umbrella header "CRFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
