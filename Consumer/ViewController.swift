@@ -10,8 +10,10 @@ import CRFramework
 
 struct MyGitHub: Codable {
     
+    let login: String?
     let name: String?
     let location: String?
+    let public_repos: Int?
     let followers: Int?
     
 }
@@ -40,7 +42,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let apiLoader = APIRequestLoader(apiRequest: GitHubRequest())
         apiLoader.loadAPIRequest(requestData: "https://api.github.com/users/redangelboy") { (githubModel, error) in
-            print((githubModel?.name)!)
+            print("Username -> \((githubModel?.login)!)")
+            print("Nickname -> \((githubModel?.name)!)")
+            print("Repos    -> \((githubModel?.public_repos)!)")
+            print("-------------------------------------------")
+            
+        }
+        
+        apiLoader.loadAPIRequest(requestData: "https://api.github.com/users/CarlosITguy") { (githubModel, error) in
+            print("Username -> \((githubModel?.login)!)")
+            print("Nickname -> \((githubModel?.name)!)")
+            print("Repos    -> \((githubModel?.public_repos)!)")
         }
         print(apiLoader.hardCodedData())
     }
